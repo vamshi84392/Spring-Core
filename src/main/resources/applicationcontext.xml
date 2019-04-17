@@ -12,7 +12,12 @@
     <bean name="custRepo" class="com.samplespring.repository.impl.HibernateCustomerRepositoryImpl" />
 
     <bean name="custService" class="com.samplespring.service.impl.CustomerServiceImpl">
-        <property name="customerRepository" ref="custRepo" />
+
+        <!--Setter Injection-->
+<!--        <property name="customerRepository" ref="custRepo" />-->
+
+        <!--Constructor Injection-->
+        <constructor-arg index="0" ref="custRepo" />
     </bean>
 
 </beans>
