@@ -11,7 +11,7 @@
 
     <bean name="custRepo" class="com.samplespring.repository.impl.HibernateCustomerRepositoryImpl" />
 
-    <bean name="custService" class="com.samplespring.service.impl.CustomerServiceImpl" autowire="byType">
+    <bean name="custService" class="com.samplespring.service.impl.CustomerServiceImpl" autowire="byName">
 
         <!--Setter Injection-->
 <!--        <property name="customerRepository" ref="custRepo" />-->
