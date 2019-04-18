@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service("customerService")
 //@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON) // Same instance for every request
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) // Different instance for each request
+//@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) // Different instance for each request
 public class CustomerServiceImpl implements CustomerService {
 
 //    @Autowired   //Member injection
