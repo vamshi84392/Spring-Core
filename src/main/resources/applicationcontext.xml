@@ -10,10 +10,11 @@
 
     </bean>-->
 
+    <context:annotation-config/>
     <context:property-placeholder location="app.properties" />
 
     <bean name="custRepo" class="com.samplespring.repository.impl.HibernateCustomerRepositoryImpl">
-            <property name="dbUserName" value="${db.user}"/>
+            <!--<property name="dbUserName" value="${db.user}"/>-->
     </bean>
     <bean name="custService" class="com.samplespring.service.impl.CustomerServiceImpl">
         <property name="customerRepository" ref="custRepo" />

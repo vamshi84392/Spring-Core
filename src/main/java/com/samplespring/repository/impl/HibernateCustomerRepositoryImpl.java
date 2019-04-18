@@ -2,12 +2,14 @@ package com.samplespring.repository.impl;
 
 import com.samplespring.model.Customer;
 import com.samplespring.repository.CustomerRepository;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
+    @Value("${db.user}")
     private String dbUserName;
 
     @Override
