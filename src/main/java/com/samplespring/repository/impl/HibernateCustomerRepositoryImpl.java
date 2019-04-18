@@ -2,10 +2,12 @@ package com.samplespring.repository.impl;
 
 import com.samplespring.model.Customer;
 import com.samplespring.repository.CustomerRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
     @Override
